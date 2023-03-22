@@ -1,28 +1,19 @@
- 
+#include "main.h"
+#include <stdio.h>
 
- /*
- * File: 0-putchar.c 
- *
- */
+/**
+*print_alphabet - prints alphabet
+*Return: No return.
+*/
 
- #include "main.h" 
+void print_alphabet(void)
+{
+	char a = 'a';
 
- /** 
- * main-print putchar followed by a new line
- * 
- *Return :always 0
- */
-  int main(void) 
- {
-      _putchar('_' );
-      _putchar ('p' );
-      _putchar ('u' );
-      _putchar ('t' );
-      _putchar ('c' );
-      _putchar ('h' );
-      _putchar ('a' );
-      _putchar ('r' );
-      _putchar ('\n');
-      
-       return (0) ;
+	while (a <= 'z')
+	{
+		printf("%c", a);
+		a++;
+	}
+	putchar('\n');
 }
