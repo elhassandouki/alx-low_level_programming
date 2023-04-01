@@ -14,7 +14,7 @@ void print_number(int n)
 
 	if (n < 0) /*Evaluate this condition*/
 	{
-		_putchar('-');
+		printf('-');
 		num = -n;
 	}
 	while (n != 0)
@@ -29,7 +29,7 @@ void print_number(int n)
 	}
 	while (pow >= 1)
 	{
-		_putchar(num / pow % 10 + '0');
+		printf(num / pow % 10 + '0');
 		pow /= 10;
 	}
 }
