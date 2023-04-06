@@ -1,25 +1,30 @@
-#include "main.h"
-#include <unistd.h>
-#include <stdio.h>
-/**
- * natural_sqr - The Function
- * @n:  The variable
- * @i:  The variable
- * Return: The Return value/void
- */
 
-int natural_sqr(int n, int i)
+#include "main.h"
+
+/**
+ * check - checks for the square root
+ * @a:int
+ * @b:int
+ *
+ * Return: int
+ */
+int check(int a, int b)
 {
-	if (i * i > n)
+	if (a * a == b)
+		return (a);
+	if (a * a > b)
 		return (-1);
-	else if (i * i == n)
-		return (i);
-	return (natural_sqr(n, i + 1));
+	return (check(a + 1, b));
 }
 
+/**
+ * _sqrt_recursion - returns the natural square root of a number
+ * @n: integer to find sqrt of
+ * Return: natural square root or -1
+ */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
-	return (natural_sqr(n, 0));
+	if (n == 0)
+		return (0);
+	return (check(1, n));
 }
