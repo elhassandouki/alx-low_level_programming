@@ -2,16 +2,12 @@
 #include <unistd.h>
 #include <stdlib.h>
 
-int main(int argc1,char const *argv []){
-
-	int sum = 0;
-	if(argc1 == 3){
-	sum = atoi(argv[1])* atoi(argv[2]);
-	printf("%d \n",sum);
-	}else{
+int main(int argc ,char  **argv){
+	if (argc != 3)
+	{
 		printf("Error\n");
-		return(1);
+		return (1);
 	}
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (0);
-
 }
