@@ -2,6 +2,13 @@
 #include <unistd.h>
 #include <stdlib.h>
 
+/**
+ * main - The Function
+ * @argc:  The variable
+ * @argv: THe variable
+ * Return: The Return value/void
+ */
+
 int main(int argc ,char  **argv){
 	if (argc != 3)
 	{
