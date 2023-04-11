@@ -1,4 +1,6 @@
-#include <stdio>
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 int main(int argc1,char const *argv []){
 
