@@ -1,10 +1,16 @@
 #include <stdio.h>
 #include <unistd.h>
 
-int main(int argc,char const *argv[]){
-	(void)argc;
+/**
+ * main - The Function
+ * @argc:  The variable
+ * @argv: The Variable
+ * Return: The Return value/void
+ */
 
-	printf("%s \n",arvg[0]);
+int main(int argc, char **argv)
+{
+	if (argc > 0)
+		printf("%s\n", *argv);
 	return (0);
 }
-
