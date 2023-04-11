@@ -1,6 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h> 
-int main(int argc,char *argv[]){ 
+#include <stdlib.h>
+
+/**
+ * main  - The Function
+ * @argc:  The variable
+ * @argv: The variable
+ * Return: The Return value/void
+ */
+
+int main(int argc,char **argv){ 
 	int sum =0; 
 	char *i; 
 	if (argc == 1)
